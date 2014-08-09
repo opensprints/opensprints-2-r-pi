@@ -1,4 +1,4 @@
-2-pi-r
+2-r-pi
 ======
 
-2nd gen opensprints, now on the raspberry pi
+2nd gen OpenSprints software, now on the Raspberry Pi
