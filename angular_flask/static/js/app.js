@@ -8,6 +8,11 @@ angular.module('AngularFlask', ['angularFlaskServices'])
             templateUrl: 'static/partials/landing.html',
             controller: IndexController
         })
+        /* Create a "/race" route that takes the user to the same place as "/post" */
+        .when('/race', {
+            templateUrl: 'static/partials/race.html',
+            controller: RaceController
+        })
         .when('/about', {
             templateUrl: 'static/partials/about.html',
             controller: AboutController

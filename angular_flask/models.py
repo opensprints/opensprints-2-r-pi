@@ -3,6 +3,23 @@ from datetime import datetime
 from angular_flask.core import db
 from angular_flask import app
 
+class Racer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+
+    def __init__(self, contestant_id):
+        self.contestant_id = contestant_id
+
+    def __repr__(self):
+        return '<Racer %r>' % self.id
+
+    def distance(self, elapsed_secs):
+        """
+        Return the distance this racer has covered in the amount of seconds
+        elapsed since the beginning of the race.
+        """
+        return '<Post %r>' % self.title
+
+
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80))

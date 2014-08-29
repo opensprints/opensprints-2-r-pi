@@ -21,3 +21,9 @@ function PostDetailController($scope, $routeParams, Post) {
         $scope.post = post;
     });
 }
+
+function RaceController($scope, $routeParams, Post) {
+    var racerQuery = Racer.get({ postId: $routeParams.racerId }, function(racer) {
+        $scope.racer = racer;
+    });
+}
